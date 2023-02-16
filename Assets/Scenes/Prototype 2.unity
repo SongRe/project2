@@ -497,7 +497,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -586,6 +586,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f3a8e5f3a5d09546a5138ac9ddfd462, type: 3}
+--- !u!1 &917188844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 917188846}
+  - component: {fileID: 917188845}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &917188845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917188844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74bd00c9b2b9c2740b55c0eabc9b1f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 6740304460254880094, guid: 177d34558e8856845b0af6f5e8c899fc, type: 3}
+  - {fileID: 3236649667213063079, guid: 17f10286b0b194b498f2c46a580a715c, type: 3}
+  - {fileID: 3952206589989528512, guid: bfa9a55749004df46951d06dfd324a0f, type: 3}
+  spawnInterval: 1000
+--- !u!4 &917188846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917188844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.200613, y: 3.7200596, z: -1.3788552}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,6 +951,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3323470447698386718, guid: 177d34558e8856845b0af6f5e8c899fc, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5725682
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323470447698386718, guid: 177d34558e8856845b0af6f5e8c899fc, type: 3}
+      propertyPath: m_Size.y
+      value: 4.136753
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323470447698386718, guid: 177d34558e8856845b0af6f5e8c899fc, type: 3}
+      propertyPath: m_Size.z
+      value: 6.877332
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323470447698386718, guid: 177d34558e8856845b0af6f5e8c899fc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323470447698386718, guid: 177d34558e8856845b0af6f5e8c899fc, type: 3}
+      propertyPath: m_Center.x
+      value: -0.13532108
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323470447698386718, guid: 177d34558e8856845b0af6f5e8c899fc, type: 3}
+      propertyPath: m_Center.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323470447698386718, guid: 177d34558e8856845b0af6f5e8c899fc, type: 3}
+      propertyPath: m_Center.z
+      value: -0.83538955
+      objectReference: {fileID: 0}
     - target: {fileID: 6740304460254880094, guid: 177d34558e8856845b0af6f5e8c899fc, type: 3}
       propertyPath: m_Name
       value: Animal_Chick
